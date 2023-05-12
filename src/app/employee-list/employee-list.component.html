@@ -1,8 +1,9 @@
+<!--  C1: K dùng Bootstrap
 <div>
   <h2> Employee List</h2>
 </div>
 
-<table class = "table table-striped table-bordered">
+<table class = "table table-striped">
   <thead>
   <tr>
     <th> First Name</th>
@@ -17,9 +18,37 @@
     <td> {{ employee.lastName }} </td>
     <td> {{ employee.email }} </td>
     <td>
-<!--      <button (click) = "updateEmployee(employee.id)" > Update</button>-->
-<!--      <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>-->
-<!--      <button (click) = "employeeDetails(employee.id)" class = "btn btn-primary" style="margin-left: 10px"> View</button>-->
+&lt;!&ndash;      <button (click) = "updateEmployee(employee.id)" > Update</button>&ndash;&gt;
+&lt;!&ndash;      <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>&ndash;&gt;
+&lt;!&ndash;      <button (click) = "employeeDetails(employee.id)" class = "btn btn-primary" style="margin-left: 10px"> View</button>&ndash;&gt;
+    </td>
+  </tr>
+  </tbody>
+</table>
+-->
+
+
+<h3> Employee List</h3>
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">Email</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employees">
+    <td> {{ employee.id }} </td>
+    <td> {{ employee.firstName }} </td>
+    <td> {{ employee.lastName }} </td>
+    <td> {{ employee.email }} </td>
+    <td>
+      <button class="btn btn-primary"> Update</button>
+      <button class="btn btn-danger"> Delete</button>
+      <button class="btn btn-warning"> View</button>
     </td>
   </tr>
   </tbody>

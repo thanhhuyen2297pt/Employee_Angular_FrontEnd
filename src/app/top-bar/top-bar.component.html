@@ -1,11 +1,11 @@
-<!-- Links on Top Bar-->
-<a [routerLink]="['/']">
-  <h1>Employee List</h1>
-</a>
+<!-- C1: K dùng Bootstrap-->
+<!--<a [routerLink]="['/']">-->
+<!--  <h1>Employee List</h1>-->
+<!--</a>-->
 
-<a [routerLink]="['/add-employee'] ">
-  <h1>Add Employee</h1>
-</a>
+<!--<a [routerLink]="['/add-employee'] ">-->
+<!--  <h1>Add Employee</h1>-->
+<!--</a>-->
 
 <!--<a [routerLink]="['/update-employee'] ">-->
 <!--  <h1>UpDate Employee</h1>-->
@@ -14,3 +14,29 @@
 <!--<a [routerLink]="['/update-employee'] ">-->
 <!--  <h1>Delete Employee</h1>-->
 <!--</a>-->
+
+<!--<nav class="navbar navbar-expand-sm bg-primary navbar-dark"> routerLink= href : link-->
+<!--  <ul class = "navbar-nav">-->          <!--C2 Bootstrap: De hien doc duoc khi co view-->
+<!--    <li class = "nav-item">-->
+<!--      <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>-->
+<!--    </li>-->
+<!--    <li class = "nav-item">-->
+<!--      <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</nav>-->
+
+<!--C3:DÙng Bootstrap https://getbootstrap.com/docs/4.0/components/navs/  style="background-color: #ddf1fd"  Working with flex utilities : min -> co view dọc-->
+<!--<nav class="nav flex-column flex-sm-row navbar-light" style="background-color: #d08585">
+  <a class="flex-sm-fill text-sm-center nav-link" href="/" >Employee List</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="/add-employee">Add Employee</a>
+</nav>-->
+
+<nav class="nav flex-column flex-sm-row bg-black ">
+  <img
+    width="25"
+    alt="Angular Logo"
+    src="https://angular.io/assets/images/logos/angular/shield-large.svg" class="rounded mx-auto d-block">
+  <a class="flex-sm-fill text-sm-center nav-link" href="/" >Employee List</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="/add-employee">Add Employee</a>
+</nav>
