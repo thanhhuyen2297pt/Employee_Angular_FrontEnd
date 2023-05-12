@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import {Employee} from "../employee";
 import {EmployeeService} from "../employee.service";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-employee',
   templateUrl: './add-employee.component.html',
@@ -12,14 +13,21 @@ export class AddEmployeeComponent {
   employee: Employee = new Employee();
   constructor(
     private employeeService: EmployeeService,
+    private router: Router
   ){}
 
   saveEmployee(){
     this.employeeService.addEmployee(this.employee)
       .subscribe(
-        data =>{window.alert("Save employee " + this.employee.firstName +" success!");},
+        data =>{window.alert("Save employee " + this.employee.firstName +" success!");
+          this.showListEmployee();
+          },
       error => window.alert(error)
       );
+  }
+
+  showListEmployee(){
+    this.router.navigate(['/employee']);
   }
 
   onSubmit(): void {

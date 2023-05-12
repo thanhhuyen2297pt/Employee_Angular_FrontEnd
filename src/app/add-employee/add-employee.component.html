@@ -1,6 +1,4 @@
 <h2 class=""> Add Employee</h2>
-
-
 <!-- C1: K dùng Bootstrap -->
 <!--<form (ngSubmit)="onSubmit()">-->
 <!--  <div>-->
@@ -23,17 +21,20 @@
 
 
 <!-- C2: Dùng Bootstrap -->
-<form>
+<form (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <label for="firstName">First Name</label>
-    <input type="text" class="form-control" [(ngModel)]="employee.firstName" id="firstName" placeholder="First Name">
-
-    <label for="lastName">Last Name </label>
-    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-
-    <label for="email">Email </label>
-    <input type="text" class="form-control" id="email" placeholder="Email">
+    <label>First Name</label>
+    <input id="firstName" type="text" class="form-control" [(ngModel)]="employee.firstName" name="fName">
   </div>
 
-  <button type="submit" type="submit" class="btn btn-primary">Add</button>
+  <div class="form-group">
+    <label>Last Name</label>
+    <input id="lastName" type="text" class="form-control" [(ngModel)]="employee.lastName" name="lastName">
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input id="email" type="text" class="form-control" [(ngModel)]="employee.email" name="email">
+  </div>
+  <button type="submit" class="btn btn-primary" style="margin-top: 15px">Add</button>
 </form>
