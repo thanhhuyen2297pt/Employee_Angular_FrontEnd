@@ -38,4 +38,9 @@ export class EmployeeListComponent implements OnInit{
       this.getEmployees();
     })
   }
+
+  infoEmployee(id: number | undefined){
+    console.log("infoEmployee id:", id);
+    this.router.navigate(['/info', id]);
+  }
 }

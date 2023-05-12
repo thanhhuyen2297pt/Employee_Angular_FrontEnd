@@ -28,7 +28,7 @@
 -->
 
 
-<h3> Employee List</h3>
+<h3>Employee List</h3>
 <table class="table table-bordered">
   <thead>
   <tr>
@@ -47,9 +47,8 @@
     <td> {{ employee.email }} </td>
     <td>
       <button class="btn btn-info"> Update</button>
-      <button class="btn btn-danger" (click) = "deleteEmployee(employee.id)" class = "btn btn-danger">Delete</button>
-      <button class="btn btn-info" (click) = "deleteEmployee(employee.id)">View</button>
-
+      <button class="btn btn-danger" (click) = "deleteEmployee(employee.id)">Delete</button>
+      <button class="btn btn-info" (click) = "infoEmployee(employee.id)">View</button>
     </td>
   </tr>
   </tbody>
