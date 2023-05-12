@@ -23,18 +23,18 @@
 <!-- C2: Dùng Bootstrap -->
 <form (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <label>First Name</label>
-    <input id="firstName" type="text" class="form-control" [(ngModel)]="employee.firstName" name="fName">
+    <label>{{'FirstName' | translate }}</label>
+    <input id="firstName" type="text" class="form-control" [(ngModel)]="employee.firstName" name="fName" placeholder="{{'FirstName' | translate }}">
   </div>
 
   <div class="form-group">
-    <label>Last Name</label>
-    <input id="lastName" type="text" class="form-control" [(ngModel)]="employee.lastName" name="lastName">
+    <label>{{'LastName' | translate }}</label>
+    <input id="lastName" type="text" class="form-control" [(ngModel)]="employee.lastName" name="lastName" placeholder="{{'LastName' | translate }}">
   </div>
 
   <div class="form-group">
-    <label>Email</label>
-    <input id="email" type="text" class="form-control" [(ngModel)]="employee.email" name="email">
+    <label>{{'Email' | translate }}</label>
+    <input id="email" type="text" class="form-control" [(ngModel)]="employee.email" name="email" placeholder="{{'Email' | translate }}">
   </div>
-  <button type="submit" class="btn btn-primary" style="margin-top: 15px">Add</button>
+  <button type="submit" class="btn btn-primary" style="margin-top: 15px">{{'Add' | translate }}</button>
 </form>

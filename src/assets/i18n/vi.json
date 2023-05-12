@@ -1,0 +1,19 @@
+{
+  "EmployeeAdd": "Thêm nhân viên",
+
+  "EmployeeList": "Danh sách nhân viên",
+
+  "FirstName": "Tên",
+
+  "LastName": "Họ",
+
+  "Email": "Email",
+  "Id": "Id",
+  "Add": "Thêm",
+
+  "Actions": "Hành động",
+  "Update": "Sửa",
+  "Delete": "Xóa",
+  "View": "Xem"
+
+}

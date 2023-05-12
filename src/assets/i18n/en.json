@@ -1,0 +1,22 @@
+{
+  "EmployeeAdd": "Add Employee",
+
+  "EmployeeList": "Employee List",
+
+  "FirstName": "First Name",
+
+  "LastName": "Last Name",
+
+  "Email": "Email",
+  "Id": "Id",
+  "Add": "Add",
+
+  "Actions": "Actions",
+
+
+  "Submit": "Submit",
+  "Update": "Update",
+  "Delete": "Delete",
+  "View": "View"
+
+}

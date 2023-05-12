@@ -10,7 +10,9 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeInfoComponent } from './employee-info/employee-info.component';
 
 import { FormsModule} from "@angular/forms";
-import  { HttpClientModule} from "@angular/common/http";
+import  { HttpClient, HttpClientModule} from "@angular/common/http";
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,28 @@ import  { HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+
+      loader: {
+
+        provide: TranslateLoader,
+
+        useFactory: httpTranslateLoader,
+
+        deps: [HttpClient]
+
+      }
+
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+
+  return new TranslateHttpLoader(http);
+
+}

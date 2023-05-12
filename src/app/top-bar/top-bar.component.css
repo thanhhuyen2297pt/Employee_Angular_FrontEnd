@@ -1,3 +1,26 @@
 a {
   margin-left: 50px;
 }
+.form-inline  select{
+  padding: 7px 20px 7px 20px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+
+}
+
+.form-inline {
+  width: auto;
+  display: flex;
+}
+
+.image-button {
+  width: 30px;
+  height: 30px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
